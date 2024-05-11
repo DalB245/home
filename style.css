@@ -1,0 +1,72 @@
+body{
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: white;
+    left: 0;
+    line-height: 200px;
+    margin-top: -125px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+#box1{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#icon-house{
+    color: white;
+    outline: white;
+    opacity: 50%;
+ position: fixed;
+ margin-top: 0%;
+ color: white;
+ text-align: center;
+ transform: translateY(-200px) translateX(-20px);
+ animation: SlideInTop 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.icons_b{
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+
+#icon-scratch{
+    position:fixed;
+    margin-top: 0%;
+    margin-left: 25%;
+    transform: translateY(-150px) translateX(-15px);
+    animation: SlideInBottom 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+#icon-yt{
+    position:fixed;
+    margin-top: 0%;
+    margin-left: 35%;
+    transform: translateY(-150px) translateX(-15px);
+    animation: SlideInBottom 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+
+.icons_b:hover{
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+
+@keyframes SlideInTop{
+    from{transform: translateY(-150px) translateX(-20px); opacity: 0%;}
+    to{transform: translateY(-200px) translateX(-20px); opacity: 50%;}
+}
+@keyframes SlideInBottom{
+    from{transform: translateY(-200px) translateX(-15px) ; opacity: 0%;}
+    to{transform: translateY(-150px) translateX(-15px); opacity: 50%;}
+}
