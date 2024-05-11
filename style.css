@@ -29,13 +29,12 @@ body{
  margin-top: 0%;
  color: white;
  text-align: center;
- transform: translateY(-200px) translateX(-20px);
+ transform: translateY(-200px) translateX(-25px);
  animation: SlideInTop 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .icons_b{
-    opacity: 0.5;
-    filter: grayscale(1);
+    filter: saturate(0) brightness(10) opacity(50%);
 }
 
 
@@ -49,7 +48,7 @@ body{
 #icon-yt{
     position:fixed;
     margin-top: 0%;
-    margin-left: 35%;
+    margin-left: 125px;
     transform: translateY(-150px) translateX(-15px);
     animation: SlideInBottom 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
@@ -58,13 +57,13 @@ body{
 
 .icons_b:hover{
     opacity: 1;
-    filter: grayscale(0);
+    filter: saturate(1);
 }
 
 
 @keyframes SlideInTop{
-    from{transform: translateY(-150px) translateX(-20px); opacity: 0%;}
-    to{transform: translateY(-200px) translateX(-20px); opacity: 50%;}
+    from{transform: translateY(-150px) translateX(-25px); opacity: 0%;}
+    to{transform: translateY(-200px) translateX(-25px); opacity: 50%;}
 }
 @keyframes SlideInBottom{
     from{transform: translateY(-200px) translateX(-15px) ; opacity: 0%;}
